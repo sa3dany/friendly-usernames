@@ -1,0 +1,30 @@
+{
+  "name": "friendly-usernames",
+  "version": "0.1.0",
+  "repository": "https://github.com/sa3dany/friendly-usernames",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@headlessui/react": "^1.3.0",
+    "@heroicons/react": "^1.0.2",
+    "friendly-words": "^1.2.0",
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.2.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^11.0.1",
+    "autoprefixer": "^10.3.0",
+    "eslint": "^7.30.0",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "lodash": "^4.17.21"
+  }
+}

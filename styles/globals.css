@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * To make the root NextJS element also 100% height - the same as the
+ * Html and body elements
+ */
+html,
+body,
+body > :first-child {
+  height: 100%;
+}
+
+/*
+ * Using em unit on `html` tag is better for accesibility because
+ * setting a px font size will override a user's chosen default font
+ * size.
+ */
+html {
+  font-size: 1em;
+}
+
+/*
+ * Gix the root Next.js element a separate stacking context so that
+ * portaled elements are laid above it
+ */
+body > :first-child {
+  isolation: isolate;
+}
