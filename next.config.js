@@ -3,7 +3,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 module.exports = withBundleAnalyzer({
-  target: "experimental-serverless-trace",
   reactStrictMode: true,
   i18n: {
     locales: ["ar", "en"],

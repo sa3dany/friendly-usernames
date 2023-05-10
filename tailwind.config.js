@@ -4,14 +4,13 @@ const colors = require("tailwindcss/colors");
 const { theme } = require("tailwindcss/defaultConfig");
 
 module.exports = {
-  mode: "jit",
-  purge: ["./components/**/*.{js,jsx}", "./pages/**/*.{js,jsx}"],
+  content: ["./components/**/*.{js,jsx}", "./pages/**/*.{js,jsx}"],
   darkMode: "media",
   theme: {
     extend: {
       // https://tailwindcss.com/docs/customizing-colors
       colors: {
-        gray: colors.coolGray,
+        gray: colors.gray,
       },
       fontFamily: {
         sans: [...theme.fontFamily.sans],

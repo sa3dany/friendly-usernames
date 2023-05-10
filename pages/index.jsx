@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import words from "friendly-words";
-import { Transition } from "@headlessui/react";
-import { ClipboardCopyIcon, RefreshIcon } from "@heroicons/react/outline";
+import { ClipboardIcon, ArrowPathIcon } from "@heroicons/react/24/outline";
 
 import Layout from "components/Layout";
 
@@ -53,7 +52,7 @@ export default function Home() {
             onClick={onCopy}
           >
             <span className="sr-only">Copy to clipboard</span>
-            <ClipboardCopyIcon className="h-10 w-10" />
+            <ClipboardIcon className="h-10 w-10" />
           </button>
 
           <button
@@ -62,7 +61,7 @@ export default function Home() {
             onClick={onGenerate}
           >
             <span className="sr-only">Generate new username</span>
-            <RefreshIcon className="h-10 w-10" />
+            <ArrowPathIcon className="h-10 w-10" />
           </button>
         </div>
       </div>
